@@ -1,0 +1,26 @@
+@import "reset.styl"
+@import "typography.styl"
+@import "media.styl"
+@import "colors.styl"
+@import "font.styl"
+@import "mixins.styl"
+
+body
+  font-family $textMainFamily
+  font-weight $textWeightMain
+  color $whiteMain
+
+button
+  font-size $textSizeButton
+  color $whiteTrans60
+
+  @media screen and (min-width: 1366px)
+    font-size $textSizeButtonL
+
+  &:hover
+    opacity .8
+
+._wrapper
+  max-width 1200px
+  margin: 0 auto
+  padding: 19px
